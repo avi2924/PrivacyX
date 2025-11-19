@@ -1,0 +1,46 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PrivacyX – Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Welcome, {{ user }}!</h1>
+
+        <form method="post" action="/ask">
+            <input type="text" name="question" placeholder="Ask a privacy-related question..." required>
+            <button type="submit">Ask</button>
+        </form>
+
+        {% if question %}
+            <h3>Your Question:</h3>
+            <p>{{ question }}</p>
+        {% endif %}
+
+        {% if answer %}
+            <h3>Answer:</h3>
+            <p>{{ answer }}</p>
+        {% endif %}
+
+        {% if sources %}
+            <h4>📚 Sources:</h4>
+            <ul>
+                {% for src in sources %}
+                    <li>{{ src }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <a href="/logout">🔓 Logout</a>
+
+        <hr style="margin: 40px 0 20px 0;">
+
+        <div style="font-size: 0.85rem; color: #666; text-align: justify; line-height: 1.5;">
+            <strong>Disclaimer:</strong> Sawari Saman ki khud zimedaar hai.
+        </div>
+    </div>
+</body>
+</html>

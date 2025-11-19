@@ -1,0 +1,23 @@
+<!-- templates/signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup – PrivacyX</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Sign Up</h1>
+        <form method="post" action="/signup">
+            <input type="text" name="username" placeholder="Choose a username" required>
+            <input type="password" name="password" placeholder="Create a password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <a href="/">Already have an account? Log in</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* General layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 16px;
+}
+
+/* Card container */
+.container {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* Emoji-style headings */
+h1 span {
+    margin-right: 8px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f0f4f8;
+}
+
+button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Link styling */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+.error {
+    color: red;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Answer & Source Box */
+.answer, .sources {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Disclaimer */
+.disclaimer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+}

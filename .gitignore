@@ -1,0 +1,8 @@
+.env
+__pycache__/
+edpb_pdfs/
+edps_pdfs/
+extracted_texts/
+extracted_texts - Copy/
+gdpr_more_pdfs/
+gdpr_official_pdfs/
